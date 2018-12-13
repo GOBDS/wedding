@@ -4,6 +4,10 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+import breakpoints from "./breakpoints.min";
+import browser from "./browser.min";
+var jQuery = require("jquery");
+
 (function($) {
 
 	// Settings.

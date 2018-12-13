@@ -1,0 +1,28 @@
+{
+  "name": "wedding",
+  "version": "1.0.0",
+  "description": "Ethereal by HTML5 UP\r html5up.net | @ajlkn\r Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GOBDS/wedding.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GOBDS/wedding/issues"
+  },
+  "homepage": "https://github.com/GOBDS/wedding#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.10.3"
+  },
+  "dependencies": {
+    "font-awesome.min.css": "^3.2.1",
+    "jquery": "^3.3.1"
+  }
+}
