@@ -1,5 +1,4 @@
 @import url(font-awesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300i,400i");
 
 /*
 	Ethereal by HTML5 UP
@@ -1189,6 +1188,10 @@ input, select, textarea {
 
 			.car {
 				background-image: url(../../images/gallery/icons/car-solid.svg);
+				background-repeat: no-repeat;
+			}
+			.whatsapp {
+				background-image: url(../../images/gallery/icons/whatsapp-brands.svg);
 				background-repeat: no-repeat;
 			}
 
