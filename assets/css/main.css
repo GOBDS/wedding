@@ -3731,7 +3731,7 @@ input, select, textarea {
 
 .container {
 	display: grid;
-	width: 90%;
+	width: auto;
 	height: 95%;
 	grid-template-columns: auto auto;
 }
@@ -3740,6 +3740,7 @@ input, select, textarea {
 	width: 90%;
 	max-width: 300px;
 	height: 95%;
+	color: white;
 	background-color: rgba(166, 166, 166, 0.5);
 	padding-top: 1em;
 	margin-top: 1em;
@@ -3747,14 +3748,25 @@ input, select, textarea {
 	box-sizing: border-box;
 }
 
+.container .banco {
+	width: 90%;
+	height: 95%;
+	color: white;
+	background-color: rgba(166, 166, 166, 0);
+	border-left: 2px solid white;
+	padding-left: 10px;
+	padding-top: 1em;
+	margin-top: 1em;
+	text-align: left;
+	box-sizing: border-box;
+}
+
 .container a {
 	text-align: end;
 }
 
-@media screen and (max-width: 700px) {
-	.container {
-		grid-template-columns: auto;
-	}
+.map iframe {
+	pointer-events:none;
 }
 
 /* The Modal (background) */
@@ -3766,24 +3778,45 @@ input, select, textarea {
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
+	overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
 /* Modal Content/Box */
 .modal-content {
-	color: black;
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+	color:white;
+	background-image: url("../../images/overlay.webp"), linear-gradient(135deg, rgba(114, 97, 147, 0.175) 25%, rgba(227, 123, 124, 0.175) 50%, rgba(255, 228, 180, 0.175));
+	background-size: 128px 128px, auto;
+	background-color: #de7172;
+    margin: 5% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+	width: 50%;
+}
+
+@media screen and (max-width: 700px) {
+	.container {
+		grid-template-columns: auto;
+	}
+	.container div {
+		max-width: 600px;
+		width: 100%;
+	}
+	.modal-content{
+		width: 80%;
+	}
+	.container .banco {
+		border-left:none;
+		padding-left: 0px;
+		padding-top: 10px;
+		border-top: 2px solid white;
+	}
 }
 
 /* The Close Button */
 .close {
-    color: #aaa;
+    color: #ffffff;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -3793,5 +3826,5 @@ input, select, textarea {
 .close:focus {
     color: black;
     text-decoration: none;
-    cursor: pointer;
+	cursor: pointer;
 }
