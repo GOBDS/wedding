@@ -92,7 +92,11 @@ var jQuery = require("jquery");
 		$window.on('load', function() {
 			window.setTimeout(function() {
 				$body.removeClass('is-preload');
-			}, 100);
+			}, 1);
+			//buffet
+			document.getElementById('buffet').src="https://embed.waze.com/pt-BR/iframe?zoom=16&lat=-22.779311&lon=-47.141857&pin=1";
+			//cerimonia
+			document.getElementById('cerimonia').src="https://embed.waze.com/pt-BR/iframe?zoom=17&lat=-22.722847&lon=-47.174917&pin=1"
 		});
 
 	// Tweaks/fixes.
